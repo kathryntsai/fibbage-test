@@ -63,7 +63,7 @@ function hostPrepareGame(data) {
 
     data.mySocketId = sock.id;
 
-    const domain = NODE_ENV == 'prod' ? 'https://fibbage-tribute-questions.herokuapp.com' : 'http://localhost:3000'
+    const domain = NODE_ENV == 'prod' ? 'https://penguinpuppy0-questions.herokuapp.com' : 'http://localhost:3000'
     const url = domain + '/question/random/' + Config.nbRounds + '?lan=' + data.language;
     console.log(url);
     request.get(url, (error, response, body) => {
